@@ -1,0 +1,335 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111; /* Set page background to dark black */
+    color: #fff; /* Set default text color to white */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff; /* Set heading color to white */
+}
+
+.title-bar {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+}
+
+.title-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* About Section */
+.about-section {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left {
+    width: 40%;
+}
+
+.about-left .profile-img {
+    width: 100%;
+    max-width: 400px; /* Increased image size */
+    border: 5px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+}
+
+.about-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.about-right h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-description ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.about-description li {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Academic Milestones Section */
+.academic-milestones-section {
+    padding: 100px 0;
+}
+
+.milestone-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsive design */
+}
+
+.milestone {
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Adjust width to fit three sections side by side with margin */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.milestone-content {
+    flex: 1;
+}
+
+.milestone-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.milestone-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.institution-logo {
+    max-width: 100px; /* Reduce the size of logos */
+    margin: 0 auto 20px; /* Center align logos and add bottom margin */
+    display: block;
+}
+
+.gold-background {
+    background-color: #584e4e; /* Set background to shiny gold */
+    margin-bottom: 30px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 100px 0;
+}
+
+.project {
+    background-color: #333; /* Set project background to dark gray */
+    border: 2px solid #ffd700; /* Add border with gold shiny color */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow effect */
+    display: flex; /* Add flexbox layout */
+    justify-content: space-between; /* Space out project details and image */
+    flex-wrap: wrap; /* Allow project items to wrap */
+}
+
+.project-details {
+    flex: 1; /* Make project details take up remaining space */
+    margin-right: 20px; /* Add margin to separate project details from image */
+}
+
+.project-image {
+    flex: 1; /* Make image take up remaining space */
+    max-width: 400px; /* Limit image width */
+}
+
+.project-image img {
+    width: 100%; /* Ensure image takes up full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius to image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow effect */
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff; /* Set project name color to white */
+}
+
+.project p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.project p strong {
+    color: #ffd700; /* Set color for technology used */
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 100px 0;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certification {
+    width: calc(25% - 20px); /* Each certification occupies 25% of container width */
+    margin: 0 10px 20px; /* Add margin between certifications and below them */
+    text-align: center;
+    background-color: #222; /* Set certification background to dark gray */
+    border: 2px solid #ffd700; /* Add border with shiny gold color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow effect */
+}
+
+.certification h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff; /* Set certification name color to white */
+}
+
+.certification img {
+    width: 100%; /* Ensure image takes up full width of container */
+    border-radius: 10px; /* Add border radius to image */
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 100px 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff; /* Set heading color to white */
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technical-skills,
+.soft-skills {
+    position: relative; /* Add relative positioning */
+    width: 45%; /* Each skills section takes up 45% of the container width */
+    padding: 20px;
+    border: 2px solid #ffd700; /* Add border with shiny gold color */
+    border-radius: 10px;
+    background-color: #222; /* Set background color to dark gray */
+}
+
+.technical-skills h3,
+.soft-skills h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffd700; /* Set skills section heading color to shiny gold */
+}
+
+.technical-skills ul,
+.soft-skills ul {
+    list-style-type: none;
+}
+
+.technical-skills li,
+.soft-skills li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.technical-skills img {
+    position: absolute; /* Add absolute positioning */
+    top: 60%; /* Position the image vertically centered */
+    right: 5%; /* Adjust the right offset as needed */
+    transform: translateY(-50%);
+    max-width: 40%; /* Adjust image width */
+    border-radius: 10px; /* Add border radius to image */
+}
+.soft-skills img {
+    position: absolute; /* Add absolute positioning */
+    top: 60%; /* Position the image vertically centered */
+    right: 5%; /* Adjust the right offset as needed */
+    transform: translateY(-50%);
+    max-width: 45%; /* Adjust image width */
+    border-radius: 10px; /* Add border radius to image */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: #111;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact-details a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
